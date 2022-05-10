@@ -21,11 +21,11 @@ app.use("/api",projectRouter)
 
 
 
-mongoose.connect('mongodb://localhost:27017/portfolio')
+mongoose.connect('mongodb+srv://dinhlcph18273:dinh28102002@cluster0.1p7hl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 .then(()=> console.log("kết nối db thành công"))
 .catch((error)=> console.log(error))
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, ()=>{
     console.log("Server is running port",PORT);
 })
