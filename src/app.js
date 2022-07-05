@@ -21,7 +21,8 @@ app.use("/api",projectRouter)
 
 
 
-mongoose.connect('mongodb+srv://dinhlcph18273:dinh28102002@cluster0.1p7hl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+// mongoose.connect('mongodb+srv://dinhlcph18273:dinh28102002@cluster0.1p7hl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://dinhlcph18273:dinh28102002@cluster0.gmqlr.mongodb.net/node-port?retryWrites=true&w=majority')
 .then(()=> console.log("kết nối db thành công"))
 .catch((error)=> console.log(error))
 
